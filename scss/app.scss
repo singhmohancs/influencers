@@ -1,0 +1,82 @@
+// Sass Example
+@import "../scss/mixin";
+@import "../scss/variable";
+@import "../scss/nav";
+@import "../scss/card";
+@import "../scss/button";
+@import "../scss/dashboard";
+@import "../scss/accordian";
+@import "../scss/custom-range-slider";
+@import "../scss/tabs";
+
+body {
+	font-size: rem(14px) !important;
+	font-family: 'Nunito Sans', sans-serif !important;
+	color: $dark !important;
+	background-color: $white-400 !important;
+}
+
+@font-face {
+	font-family: 'Avenir LT Std';
+	src: url('../fonts/AvenirLTStd-Black.eot');
+	src: url('../fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirLTStd-Black.woff2') format('woff2'), url('../fonts/AvenirLTStd-Black.woff') format('woff'), url('../fonts/AvenirLTStd-Black.ttf') format('truetype'), url('../fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+html,
+body {
+	height: calc(100vh);
+	min-height: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px !important;
+}
+
+.btn {
+	&:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+
+.dropdown-toggle {
+	text-decoration: none;
+	&.no-arrow-icon {
+		&:after {
+			display: none !important;
+		}
+	}
+}
+
+
+.search input::placeholder {
+	color: $gray-40 !important;
+	opacity: 1;
+	/* Firefox */
+}
+
+.search input:-ms-input-placeholder {
+	color: $gray-40 !important;
+}
+
+.search input ::-ms-input-placeholder {
+	color: $gray-40 !important;
+}
+
+input::placeholder {
+	color:$dark-200 !important;
+	opacity: 1;
+	/* Firefox */
+}
+
+ input:-ms-input-placeholder {
+	color:$dark-200 !important;
+}
+
+ input ::-ms-input-placeholder {
+	color:$dark-200 !important;
+}

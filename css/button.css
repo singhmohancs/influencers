@@ -1,0 +1,49 @@
+.btn-primary {
+  background: #9637f1 !important;
+  border-color: #9637f1 !important;
+}
+.btn-primary:hover, .btn-primary:active {
+  background: #9637f1 !important;
+  border-color: #9637f1 !important;
+}
+
+.btn-outline-primary {
+  background: transparent !important;
+  border-color: #9637f1 !important;
+  color: #9637f1 !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  background: #9637f1 !important;
+  border-color: #9637f1 !important;
+  color: #fff !important;
+}
+
+.btn-outline-grey {
+  border: 1px solid #ccd4e0 !important;
+  color: #9637f1 !important;
+  height: rem(52px);
+  border-radius: rem(8px) !important;
+}
+
+.btn-campaign {
+  width: 100%;
+  margin-left: rem(28px);
+  display: flex !important;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: rem(14px) !important;
+  padding: 0 rem(28px) !important;
+  white-space: nowrap;
+}
+@media screen and (max-width: 991px) and (min-width: 320px) {
+  .btn-campaign {
+    margin: 0;
+  }
+}
+.btn-campaign .add-icon {
+  margin-right: rem(12px);
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=button.css.map */

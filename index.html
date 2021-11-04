@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Influencer Landing page"
+         >
+      <meta name="author" content="Influencer Landing page">
+      <meta name="keywords" content="Influencer Landing page">
+      <title>Local Influencer</title>
+      <link rel="stylesheet" href="css/app.css" type="text/css">
+      
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="	https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <header class="main-header">
+         <nav class="navbar justify-content-start navbar-expand-lg navbar-light ">
+            <div class="container-fluid p-0">
+               <!-- Logo -->
+               <a class="navbar-brand" href="index.html">
+               <img src="images/logo.svg" />Local Influencer
+               </a>
+               <a class="navbar-brand navbar-brand-mob" href="index.html">
+               Create Campaign
+               </a>
+               <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                  aria-label="Toggle navigation">
+               <img src="images/icon.svg">
+               </button>
+               <button type="button" class="setting-btn btn ">
+               <img src="images/setting.svg">
+               </button>
+               <div class=" navbar-header-collapse" id="">
+                  <div class="search">
+                     <div class="search-icon">
+                        <img src="images/search.svg" />
+                     </div>
+                     <input type="text" class="form-control" placeholder="Search...">
+                  </div>
+                  <div class="header-right-content ms-auto ">
+                     <button type="button" class="btn-campaign btn btn-outline-grey">
+                        <div class="add-icon">
+                           <img src="images/add-icon.svg">
+                        </div>
+                        New
+                        Campaign
+                     </button>
+                     <div class="header-icons">
+                        <button type="button" class="btn-link btn"><img src="images/notiffication icon.svg" />
+                        <span class="new-message-icon"></span>
+                        </button>
+                     </div>
+                     <div class="dropdown header-user-info">
+                        <a class=" dropdown-toggle no-arrow-icon" href="#" role="button" id="dropdownMenuLink"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="header-user-content">
+                              <h5>Sadum Cosm</h5>
+                              <div class="user-avatar">
+                                 <img src="images/user-profile.jpg" />
+                              </div>
+                           </div>
+                           <div class="dropdown-icon">
+                              <img src="images/dropdown.svg" />
+                           </div>
+                        </a>
+                        <ul class="dropdown-menu shadow-sm dropdown-menu-end mt-2" aria-labelledby="dropdownMenuLink">
+                           <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                     </div>
+                  </div> 
+               </div>
+         </nav>
+         <!-- Header Navbar -->
+      </header>
+      <!--mobile nav-->
+      <div class="navbar-mob-content offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="navbar-mob-header">
+      <button class="btn back-icon" data-bs-dismiss="offcanvas"  aria-label="Close">
+      <img src="images/back.svg">
+      </button>
+      <a class="navbar-brand" href="index.html">
+      <img src="images/logo.svg" />Local Influencer
+      </a>
+      </div>
+      <div class="search">
+      <div class="search-icon">
+      <img src="images/search.svg" />
+      </div>
+      <input type="text" class="form-control" placeholder="Search...">
+      </div>
+      <div class="navbar-mob-body">
+      <div class="nav-menus">
+      <button type="button" class=" btn ">
+      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+         d="M16.5926 9.143H9.73562V16H7.44962V9.143H0.592619V6.857H7.44962V0H9.73562V6.857H16.5926V9.143Z"
+         fill="#9637F1" />
+      </svg>
+      New
+      Campaign
+      </button>
+      <button class="btn" id="">
+      <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9493 6.96805C24.1911 7.61377 23.2082 8.00682 22.113 8.00682C21.0459 8.00682 20.0631 7.61377 19.3049 6.99612C18.8836 7.36109 18.4905 7.81028 18.1816 8.31563C19.4172 9.579 20.2596 11.4319 20.4843 13.5095C20.9898 13.5375 21.5514 13.5656 22.1411 13.5656C24.5 13.5656 26.1287 13.1445 26.8588 12.9199C27.1116 12.8357 27.3081 12.583 27.28 12.3022C27.1677 10.0563 26.2691 8.11911 24.9493 6.96805H24.9493Z" fill="#253858"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0791 3.53643C19.0791 1.86011 20.438 0.501171 22.1143 0.501171C23.7907 0.501171 25.1496 1.8601 25.1496 3.53643C25.1496 5.21276 23.7907 6.5717 22.1143 6.5717C20.438 6.5717 19.0791 5.21277 19.0791 3.53643Z" fill="#253858"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.57662 6.96805C7.81863 7.61396 6.808 7.97904 5.76928 7.97904C4.7025 7.97904 3.71993 7.58587 2.96195 6.96805C1.6425 8.09136 0.744153 10.0291 0.631859 12.2757C0.631859 12.5566 0.8003 12.8093 1.05296 12.8936C1.78287 13.1182 3.43919 13.5395 5.76928 13.5395C6.35882 13.5395 6.92029 13.5114 7.42561 13.4833C7.65019 11.4052 8.4924 9.55169 9.72762 8.28795C9.39074 7.78246 8.99771 7.33314 8.57661 6.96805H8.57662Z" fill="#253858"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.73381 3.53643C2.73381 1.86011 4.09274 0.501171 5.76908 0.501171C7.4454 0.501171 8.80434 1.8601 8.80434 3.53643C8.80434 5.21276 7.44541 6.5717 5.76908 6.5717C4.09275 6.5717 2.73381 5.21277 2.73381 3.53643Z" fill="#253858"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.751 8.90306C15.9929 9.54878 15.0101 9.91374 13.9431 9.91374C12.8761 9.91374 11.8933 9.54877 11.1351 8.90306C9.81537 10.0541 8.91683 11.9913 8.80451 14.2372C8.80451 14.518 8.97298 14.7707 9.22569 14.8549C9.95577 15.0795 11.6125 15.5006 13.9431 15.5006C16.2737 15.5006 17.9304 15.0795 18.6604 14.8549C18.9132 14.7707 19.1097 14.518 19.0816 14.2372C18.9974 11.9632 18.0708 10.026 16.751 8.90306Z" fill="#253858"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9062 5.47655C10.9062 3.80299 12.2652 2.44629 13.9415 2.44629C15.6178 2.44629 16.9768 3.80298 16.9768 5.47655C16.9768 7.15011 15.6178 8.50681 13.9415 8.50681C12.2652 8.50681 10.9062 7.15012 10.9062 5.47655Z" fill="#253858"/>
+      </svg>
+      Influencers
+      </button>
+      <button class="btn" id="">
+      <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4521 11.3083L24.6428 10.7109L28.3078 9.51379C29.4998 9.12361 29.5748 11.4849 28.4521 11.3083V11.3083ZM27.2724 6.22902L23.6749 7.61771L26.2496 4.74652C27.0877 3.81351 28.3331 5.82042 27.2724 6.22902H27.2724ZM23.7115 2.42129L21.2894 5.42066L22.0843 1.648C22.3431 0.421105 24.4255 1.53682 23.7115 2.42128V2.42129ZM18.7233 0.902995L18.1264 4.71218L16.9276 1.04783C16.5379 -0.144705 18.8997 -0.219755 18.7233 0.902995H18.7233ZM12.3039 7.80575L4.58515 16.7628L7.03535 20.4335C10.7797 19.2042 14.5236 17.973 18.268 16.743L12.3039 7.80575H12.3039ZM16.2091 19.5653L11.059 21.2578C11.3579 23.1995 13.6331 24.209 15.293 23.1015C16.4533 22.3271 16.8481 20.8025 16.2091 19.5653H16.2091ZM5.0224 21.1017L3.19562 18.3647C2.1153 19.663 3.40814 21.602 5.0224 21.1017ZM11.2386 11.8468C12.9726 11.8468 14.3767 13.2514 14.3767 14.985C14.3767 16.7182 12.9726 18.1235 11.2386 18.1235C9.5047 18.1235 8.10041 16.7182 8.10041 14.985C8.10041 13.2514 9.50471 11.8468 11.2386 11.8468ZM2.58674 15.9591L11.6383 5.45572C11.7078 5.37534 11.7871 5.30878 11.8724 5.25566L12.6818 2.66171C12.8843 1.80768 14.027 1.58284 14.5264 2.33171L17.9824 7.50972C18.5159 7.16345 19.1525 6.96233 19.8361 6.96233C21.7203 6.96233 23.2466 8.48873 23.2466 10.3728C23.2466 11.5388 22.6614 12.5684 21.7684 13.1831L24.4566 17.2111C24.976 17.9893 24.5486 18.9931 23.5916 18.9078L20.0207 18.5806C19.862 18.5771 19.7056 18.5371 19.5643 18.4624L18.1664 18.922C19.0839 21.039 18.3519 23.5186 16.4285 24.8025C13.6014 26.689 9.90044 25.1364 9.10943 21.8976L6.93377 22.6129C6.78887 22.6607 6.6408 22.6741 6.49883 22.6578C2.4461 25.1693 -1.54719 19.1865 2.32195 16.407C2.36919 16.2402 2.45808 16.0854 2.58674 15.9591ZM26.9338 16.2972L23.9343 13.875L27.7062 14.6695C28.934 14.9283 27.8179 17.0096 26.9338 16.2972V16.2972Z" fill="#253858"/>
+      </svg>
+      Campaign
+      </button>
+      <button class="btn" id="">
+      <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7349 5.38238C16.9648 5.38238 16.3428 4.76037 16.3428 3.99027C16.3428 3.22017 16.9648 2.59816 17.7349 2.59816C18.505 2.59816 19.127 3.22017 19.127 3.99027C19.127 4.76038 18.505 5.38238 17.7349 5.38238ZM20.8153 8.99595L21.0819 2.03539C21.1115 1.35415 20.5191 0.732142 19.8082 0.761762L12.8773 1.05795C12.6107 1.08757 12.3738 1.17643 12.1961 1.35415L1.20726 12.3133C0.792592 12.728 0.822212 13.4389 1.29612 13.8831L7.96048 20.5475C8.40477 20.9918 9.11564 21.051 9.5303 20.6364L20.5191 9.64758C20.6968 9.46986 20.8153 9.2329 20.8153 8.99595Z" fill="#253858"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5615 12.8444L9.52905 21.8499C9.2329 22.2349 8.55178 22.1757 7.95948 21.761L2.30311 16.1326L1.65159 17.0805C1.32583 17.5545 1.4739 18.2654 2.00696 18.6209L9.73637 24.0123C10.2694 24.3678 10.9802 24.3086 11.3059 23.805L18.7688 13.0518C18.8873 12.9037 18.68 12.7259 18.5615 12.8444L18.5615 12.8444Z" fill="#253858"/>
+      </svg>
+      Deal
+      </button>
+      <button class="btn" id="">
+      <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8.00153C16 6.40935 15.368 4.88221 14.243 3.75537C13.117 2.62954 11.591 1.99707 10 1.99707C8.409 1.99707 6.883 2.62954 5.757 3.75537C4.632 4.88221 4 6.40934 4 8.00153C4 15.0067 1 17.0082 1 17.0082H19C19 17.0082 16 15.0067 16 8.00153Z" fill="#253858" stroke="#253858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.73 21.0094C11.554 21.3116 11.302 21.5629 10.998 21.7364C10.695 21.9109 10.35 22.0037 10 22.0037C9.65002 22.0037 9.30502 21.9109 9.00202 21.7364C8.69802 21.5629 8.44602 21.3116 8.27002 21.0094" fill="#253858"/>
+      <path d="M11.73 21.0094C11.554 21.3116 11.302 21.5629 10.998 21.7364C10.695 21.9109 10.35 22.0037 10 22.0037C9.65002 22.0037 9.30502 21.9109 9.00202 21.7364C8.69802 21.5629 8.44602 21.3116 8.27002 21.0094" stroke="#253858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Notifications
+      </button>
+      </div>
+      </div>
+      </div>
+  
+      <div class="dashboard-content">
+         <div class="tabs">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link " id="pills-influencer-tab" data-bs-toggle="pill"
+                     data-bs-target="#pills-influencer" type="button" role="tab" aria-controls="pills-influencer"
+                     aria-selected="true">
+                     <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M19.0602 5.49999C18.4701 6.00302 17.7052 6.30921 16.8529 6.30921C16.0224 6.30921 15.2574 6.00302 14.6674 5.52186C14.3395 5.80618 14.0336 6.15611 13.7932 6.54978C14.7548 7.53396 15.4104 8.97742 15.5853 10.5959C15.9787 10.6177 16.4158 10.6396 16.8747 10.6396C18.7105 10.6396 19.9781 10.3115 20.5463 10.1366C20.743 10.071 20.896 9.87412 20.8742 9.65542C20.7867 7.90577 20.0874 6.3967 19.0602 5.5V5.49999Z"
+                           fill="#253858" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M14.4913 2.83845C14.4913 1.53526 15.5478 0.478815 16.851 0.478815C18.1542 0.478815 19.2106 1.53526 19.2106 2.83845C19.2106 4.14165 18.1542 5.19809 16.851 5.19809C15.5478 5.19809 14.4913 4.14165 14.4913 2.83845Z"
+                           fill="#253858" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M6.32343 5.49999C5.73351 6.00284 4.94697 6.28705 4.13857 6.28705C3.30833 6.28705 2.54363 5.98098 1.95372 5.49999C0.926837 6.37449 0.22768 7.88303 0.140287 9.63205C0.140287 9.85067 0.271377 10.0474 0.468012 10.113C1.03607 10.2879 2.32514 10.6159 4.13856 10.6159C4.59738 10.6159 5.03435 10.594 5.42762 10.5721C5.60241 8.95431 6.25787 7.51137 7.21921 6.52754C6.95703 6.13401 6.65115 5.78421 6.32342 5.49999H6.32343Z"
+                           fill="#253858" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M1.77773 2.83845C1.77773 1.53526 2.83418 0.478815 4.13737 0.478815C5.44056 0.478815 6.49701 1.53526 6.49701 2.83845C6.49701 4.14165 5.44056 5.19809 4.13737 5.19809C2.83418 5.19809 1.77773 4.14165 1.77773 2.83845Z"
+                           fill="#253858" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M12.6801 7.00523C12.0902 7.50825 11.3255 7.79257 10.4953 7.79257C9.66508 7.79257 8.9004 7.50826 8.31049 7.00523C7.28363 7.90192 6.58449 9.411 6.4971 11.1607C6.4971 11.3794 6.62818 11.5762 6.82481 11.6418C7.39287 11.8168 8.68191 12.1448 10.4953 12.1448C12.3087 12.1448 13.5977 11.8168 14.1658 11.6418C14.3624 11.5762 14.5154 11.3794 14.4935 11.1607C14.428 9.38913 13.707 7.88005 12.6801 7.00523H12.6801Z"
+                           fill="#253858" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M8.13454 4.34368C8.13454 3.04049 9.19099 1.98404 10.4942 1.98404C11.7974 1.98404 12.8538 3.04049 12.8538 4.34368C12.8538 5.64687 11.7974 6.70332 10.4942 6.70332C9.19099 6.70332 8.13454 5.64687 8.13454 4.34368Z"
+                           fill="#253858" />
+                     </svg>
+                     Influencer
+                  </button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-campaign-tab" data-bs-toggle="pill"
+                     data-bs-target="#pills-campaign" type="button" role="tab" aria-controls="pills-campaign"
+                     aria-selected="false">
+                     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M15.3475 6.19379L13.371 5.88385L15.2726 5.2627C15.8911 5.06025 15.93 6.28547 15.3475 6.19379ZM14.7354 3.55832L12.8687 4.27887L14.2046 2.78909C14.6396 2.30498 15.2858 3.34631 14.7354 3.55832ZM12.8877 1.58259L11.631 3.13888L12.0435 1.18135C12.1777 0.544749 13.2582 1.12366 12.8878 1.58259H12.8877ZM10.2995 0.794799L9.98979 2.77127L9.36772 0.869949C9.16557 0.251179 10.391 0.212229 10.2995 0.794799ZM6.96867 4.37643L2.9636 9.02399L4.23496 10.9286C6.17777 10.2907 8.1204 9.65194 10.0633 9.01369L6.96867 4.37642V4.37643ZM8.99492 10.4781L6.32273 11.3563C6.47776 12.3638 7.65836 12.8876 8.51963 12.3129C9.12168 11.9111 9.32651 11.12 8.99492 10.4781ZM3.19047 11.2753L2.24266 9.85515C1.68211 10.5288 2.35289 11.5349 3.19047 11.2753ZM6.41587 6.47322C7.31559 6.47322 8.04417 7.20204 8.04417 8.10153C8.04417 9.00084 7.31559 9.73002 6.41587 9.73002C5.51621 9.73002 4.78757 9.00084 4.78757 8.10153C4.78757 7.20204 5.51621 6.47322 6.41587 6.47322ZM1.92668 8.60695L6.62327 3.15708C6.65934 3.11538 6.70048 3.08084 6.74473 3.05328L7.16477 1.70736C7.26981 1.26422 7.86271 1.14756 8.12186 1.53613L9.91501 4.22285C10.1919 4.04318 10.5222 3.93882 10.8769 3.93882C11.8545 3.93882 12.6465 4.73083 12.6465 5.7084C12.6465 6.31339 12.3429 6.84764 11.8795 7.16658L13.2743 9.25658C13.5439 9.6604 13.3221 10.1812 12.8255 10.137L10.9727 9.9672C10.8904 9.96537 10.8092 9.9446 10.7359 9.90584L10.0105 10.1443C10.4866 11.2428 10.1068 12.5294 9.1088 13.1955C7.64188 14.1744 5.72159 13.3688 5.31113 11.6883L4.18222 12.0594C4.10709 12.0842 4.03024 12.0912 3.95657 12.0827C1.85373 13.3859 -0.218296 10.2815 1.78927 8.83935C1.81381 8.7528 1.85995 8.67253 1.92666 8.60694L1.92668 8.60695ZM14.5597 8.7824L13.0033 7.52557L14.9605 7.93784C15.5975 8.07214 15.0184 9.15204 14.5597 8.7824H14.5597Z"
+                           fill="white" />
+                     </svg>
+                     Campaign
+                  </button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-deal-tab" data-bs-toggle="pill" data-bs-target="#pills-deal"
+                     type="button" role="tab" aria-controls="pills-deal" aria-selected="false">
+                     <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M10.6447 3.05347C10.1993 3.05347 9.83963 2.69378 9.83963 2.24844C9.83963 1.8031 10.1993 1.44341 10.6447 1.44341C11.09 1.44341 11.4497 1.80311 11.4497 2.24844C11.4497 2.69378 11.09 3.05347 10.6447 3.05347ZM12.426 5.14313L12.5802 1.11797C12.5973 0.724019 12.2547 0.364319 11.8436 0.381449L7.83561 0.552729C7.68145 0.569859 7.54443 0.621239 7.44166 0.724009L1.08705 7.06149C0.847249 7.30129 0.864379 7.71237 1.13843 7.96929L4.9923 11.8232C5.24923 12.0801 5.66031 12.1143 5.9001 11.8745L12.2547 5.51994C12.3575 5.41717 12.426 5.28014 12.426 5.14312L12.426 5.14313Z"
+                           fill="#253858" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M11.1289 7.36712L5.9048 12.5746C5.73352 12.7973 5.33957 12.763 4.997 12.5232L1.7255 9.26855L1.34868 9.8167C1.16027 10.0908 1.24591 10.5019 1.55422 10.7074L6.02471 13.8251C6.33301 14.0306 6.74409 13.9964 6.93251 13.7052L11.2488 7.48704C11.3173 7.4014 11.1975 7.29861 11.1289 7.36713L11.1289 7.36712Z"
+                           fill="#253858" />
+                     </svg>
+                     Deal
+                  </button>
+               </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade" id="pills-influencer" role="tabpanel" aria-labelledby="pills-influencer-tab">Pills influencer content
+               </div>
+               <div class="tab-pane fade  show active" id="pills-campaign" role="tabpanel"
+                  aria-labelledby="pills-campaign-tab">
+                  <div class="campaign-content">
+                     <div class="campaign-content-row row g-0">
+                        <div class="col col-left-content">
+                           <div class="campaign-cards card ">
+                              <div class="card-header">
+                                 Target
+                              </div>
+                              <div class="card-body ">
+                                 <div class="card-body-content">
+                                    <div class="card-body-heading">
+                                       <h3><span>45</span>Local influencers availabe</h3>
+                                    </div>
+                                    <div class="custom-slider followers-slider mt-20">
+                                       <div class="custom-label">Followers
+                                          <span class="custom-badges">600+</span>
+                                       </div>
+                                       <input type="range" min="1" max="100" value="50" class="custom-range"
+                                          id="followersRange">
+                                    </div>
+                                    <div class="custom-slider followers-slider mt-4">
+                                       <div class="custom-label">Price rage / post
+                                          <span class="custom-badges">1-50</span>
+                                       </div>
+                                       <div class="slider-wrapper d-flex"><input id="min" type="range" min="0" step="1"
+                                          max="10" value="1"><input id="max" type="range" min="0" step="1" max="10"
+                                          value="9"></div>
+                                    </div>
+                                    <div class="rating-info mt-2">
+                                       <div class="custom-label">Rating</div>
+                                       <div class="stars">
+                                          <a href="#" class="star-rating active">
+                                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                   d="M12 17.8964L19.416 22.2154L17.448 14.0754L24 8.59842L15.372 7.89242L12 0.215423L8.628 7.89242L0 8.59842L6.552 14.0754L4.584 22.2154L12 17.8964Z"
+                                                   fill="#9637F1" />
+                                             </svg>
+                                          </a>
+                                          <a href="#" class="star-rating active">
+                                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                   d="M12 17.8964L19.416 22.2154L17.448 14.0754L24 8.59842L15.372 7.89242L12 0.215423L8.628 7.89242L0 8.59842L6.552 14.0754L4.584 22.2154L12 17.8964Z"
+                                                   fill="#9637F1" />
+                                             </svg>
+                                          </a>
+                                          <a href="#" class="star-rating active">
+                                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                   d="M12 17.8964L19.416 22.2154L17.448 14.0754L24 8.59842L15.372 7.89242L12 0.215423L8.628 7.89242L0 8.59842L6.552 14.0754L4.584 22.2154L12 17.8964Z"
+                                                   fill="#9637F1" />
+                                             </svg>
+                                          </a>
+                                          <a href="#" class="star-rating active">
+                                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                   d="M12 17.8964L19.416 22.2154L17.448 14.0754L24 8.59842L15.372 7.89242L12 0.215423L8.628 7.89242L0 8.59842L6.552 14.0754L4.584 22.2154L12 17.8964Z"
+                                                   fill="#9637F1" />
+                                             </svg>
+                                          </a>
+                                          <a href="#" class="star-rating active">
+                                             <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                   d="M12 17.8964L19.416 22.2154L17.448 14.0754L24 8.59842L15.372 7.89242L12 0.215423L8.628 7.89242L0 8.59842L6.552 14.0754L4.584 22.2154L12 17.8964Z"
+                                                   fill="#9637F1" />
+                                             </svg>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!--accordian-->
+                                 <div class="custom-accordion accordion" id="accordionExample">
+                                    <div class="accordion-item" id="headingOne">
+                                       <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <button class="btn" type="button">
+                                             <h5>Age and gender <span class="age-limit">16 - 65+ I All</span></h5>
+                                          </button>
+                                          <div id="collapseOne" class="w-100 accordion-collapse collapse"
+                                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                             <div class="accordion-body">
+                                                <div class="accordian-body-header">
+                                                   <button class="nav-link btn " type="button" role="tab"
+                                                      aria-selected="true">All</button>
+                                                   <button class="nav-link active btn " type="button" role="tab"
+                                                      aria-selected="true">Women</button>
+                                                   <button class="nav-link btn " type="button" role="tab"
+                                                      aria-selected="true">Male</button>
+                                                </div>
+                                                <div class="custom-slider age-limit-slider  ">
+                                                   <div class="custom-label">Age
+                                                      <span class="custom-badges">16-65+</span>
+                                                   </div>
+                                                   <input type="range" min="1" max="100" value="50" class="custom-range"
+                                                      id="">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-item" id="headingtwo">
+                                       <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                          data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                                          <button class="btn" type="button">
+                                             <h5>Location <span>Entire country</span></h5>
+                                          </button>
+                                          <div id="collapsetwo" class="w-100 accordion-collapse collapse"
+                                             aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+                                             <form>
+                                                <div class="form-field custom-field">
+                                                   <input type="text" class="form-control" placeholder="Entire country"
+                                                      id="country" aria-describedby="country">
+                                                </div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-item" id="headinginterest">
+                                       <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseinterest" aria-expanded="true"
+                                          aria-controls="collapseinterest">
+                                          <button class="btn" type="button">
+                                             <h5>Interest <span>All</span></h5>
+                                          </button>
+                                          <div id="collapseinterest" class="w-100 accordion-collapse collapse"
+                                             aria-labelledby="headinginterest" data-bs-parent="#accordionExample">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-item" id="headingfilters">
+                                       <div class="accordion-button collapsed" data-bs-toggle="collapse"
+                                          data-bs-target="#collapsefilters" aria-expanded="true"
+                                          aria-controls="collapsefilters">
+                                          <button class="btn" type="button">
+                                             <h5>Quality <span>Filters</span></h5>
+                                          </button>
+                                          <div id="collapsefilters" class="w-100 accordion-collapse collapse"
+                                             aria-labelledby="headingfilters" data-bs-parent="#accordionExample">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="campaign-cards budget-card card mt-12 ">
+                              <div class="card-header">
+                                 Budget
+                              </div>
+                              <div class="card-body ">
+                                 <div class="card-body-content card-budget-content">
+                                    <div class="card-body-heading">
+                                       <h3><span>20.00 RON</span>Total Budget</h3>
+                                       <p>146-432 Estimated reach</p>
+                                    </div>
+                                    <div class="custom-slider  ">
+                                       <div class="custom-label">Influencers
+                                          <span class="custom-badges">500+</span>
+                                       </div>
+                                       <input type="range" min="1" max="100" value="50" class="custom-range">
+                                    </div>
+                                    <div class="custom-slider followers-slider mt-3">
+                                       <div class="custom-label">Posts
+                                          <span class="custom-badges">100+</span>
+                                       </div>
+                                       <input type="range" min="1" max="100" value="50" class="custom-range">
+                                    </div>
+                                    <button class="btn-primary continue-btn btn w-100 btn-block">Continue</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col col-right-content">
+                           <div class="campaign-cards card audience-card ">
+                              <div class="card-body-right-content">
+                                 <div class="row g-0 d-flex align-items-center">
+                                    <div class="col-md-6 col-sm-12">
+                                       <div class="card-body-header">
+                                          Audience Definition
+                                       </div>
+                                       <div class="card-body-info">
+                                          <div class="audience-info">Location: United States</div>
+                                          <div class="audience-info">Age: 18-65+</div>
+                                          <div class="audience-info d-flex flex-column">Potential Reach:<span>186.000.000
+                                             people</span></ap>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                       <div class="audience-graph">
+                                          <img src="images/graph.png" />
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-footer-info">
+                                    <div class="card-influencer-info">
+                                       <img src="images/influencer-img.svg" />
+                                       <div class="card-influencer-content">
+                                          <p>Number of influencers </p>
+                                          <h6>45</h6>
+                                       </div>
+                                    </div>
+                                    <div class="card-influencer-info">
+                                       <img src="images/reach.svg" />
+                                       <div class="card-influencer-content">
+                                          <p>Potential Reach </p>
+                                          <h6>45</h6>
+                                       </div>
+                                    </div>
+                                    <div class="card-influencer-info">
+                                       <img src="images/hand.svg" />
+                                       <div class="card-influencer-content">
+                                          <p>Potential Engagement </p>
+                                          <h6>45</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-deal" role="tabpanel" aria-labelledby="pills-deal-tab">Pills deal content</div>
+               </div>
+            </div>
+         </div>
+     
+   </body>
+</html>

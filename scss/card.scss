@@ -1,0 +1,165 @@
+@import "../scss/variable";
+
+/**card**/
+
+.campaign-cards {
+	&.card {
+		background: $white;
+		border: none;
+		border-radius: rem(14px) !important;
+		padding-bottom: rem(36px);
+		.card-header {
+			padding: rem(16px) rem(30px) rem(16px);
+			background: transparent;
+			border-bottom: 1px solid $white-500;
+			font-weight: bold;
+			font-size: rem(20px);
+			line-height: 20px;
+			color: $dark-200 !important;
+			@media screen and(max-width: 991px)and(min-width:320px) {
+				padding: rem(20px) rem(24px) rem(20px);
+			}
+		}
+		.card-body {
+			padding: 0 !important;
+		}
+		.card-body-content {
+			padding: rem(30px) rem(32px) 0 !important;
+			@media screen and(max-width: 991px)and(min-width:320px) {
+				padding: rem(28px) rem(22px) 0 !important;
+			}
+			&.card-budget-content {
+				padding: rem(10px) rem(32px) 0 !important;
+				@media screen and(max-width: 991px)and(min-width:320px) {
+					padding: rem(22px) rem(26px) 0 !important;
+				}
+				.card-body-heading {
+					p {
+						margin-bottom: 0;
+						font-weight: 600;
+						font-size: rem(21px);
+						color: $gray-30;
+						line-height: rem(19px);
+						margin-top: rem(10px);
+						@media screen and(max-width: 412px)and(min-width:320px) {
+							font-size: rem(16px);
+						}
+					}
+				}
+				.custom-slider {
+					margin-top: rem(20px);
+				}
+			}
+			.card-body-heading {
+				color: $dark-300;
+				h3 {
+					margin: 0;
+					display: flex;
+					align-items: center;
+					font-weight: bold;
+					font-size: rem(25px);
+					@media screen and(max-width: 991px)and(min-width:320px) {
+						font-size: rem(24px);
+					}
+					@media screen and(max-width: 412px)and(min-width:320px) {
+						font-size: rem(18px);
+					}
+					span {
+						font-weight: 800;
+						font-size: rem(35px);
+						margin-right: rem(10px);
+						@media screen and(max-width: 991px)and(min-width:413px) {
+							margin-right: rem(6px);
+							font-size: rem(34px);
+						}
+						@media screen and(max-width:412px)and(min-width:320px) {
+							margin-right: rem(6px);
+							font-size: rem(24px);
+						}
+					}
+				}
+			}
+		}
+	}
+	&.budget-card {
+		@media screen and(max-width: 991px)and(min-width:320px) {
+			margin-top:rem(17px);
+		}
+	}
+}
+
+.audience-card {
+	@media screen and(max-width: 991px)and(min-width:320px) {
+		margin-top:rem(17px);
+		padding-bottom: 0 !important;
+	}
+	.card-body-right-content {
+		margin: rem(28px) 1.875rem 2.125rem !important;
+		@media screen and(max-width: 991px)and(min-width:320px) {
+			margin:rem(20px) rem(18px)!important;
+		}
+		@media screen and(max-width:991px)and(min-width:320px) {
+			.card-footer-info {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.card-body-right-content {
+	margin: rem(38px) rem(30px) rem(34px);
+	.card-body-header {
+		font-weight: bold;
+		font-size: rem(20px);
+		line-height: 20px;
+		color: $dark-200;
+	}
+	.card-body-info {
+		margin-top: rem(15px);
+		.audience-info {
+			font-size: rem(15px);
+			color: $dark-500;
+			margin-top: rem(10px);
+			span {
+				font-size: rem(21px);
+				font-weight: bold;
+				margin-top: rem(5px);
+			}
+		}
+	}
+}
+
+.card-footer-info {
+	margin-top: rem(38px);
+	display: flex;
+}
+
+.card-influencer-info {
+	display: flex;
+	align-items: center;
+	&:not(:last-child) {
+		margin-right: rem(38px);
+		@media screen and(max-width: 991px)and(min-width:320px) {
+			margin-right: 0;
+			margin-bottom: rem(18px);
+		}
+	}
+	&:last-child {
+		margin-right: rem(0) !important;
+	}
+	.card-influencer-content {
+		margin-left: rem(15px);
+		p {
+			margin: 0;
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: rem(11px);
+			color: $gray-100;
+		}
+		h6 {
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: rem(19px);
+			font-family: 'Montserrat', sans-serif !important;
+		}
+	}
+}

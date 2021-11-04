@@ -1,0 +1,41 @@
+.tabs .nav-pills {
+  margin-bottom: rem(25px);
+}
+@media screen and (max-width: 991px) and (min-width: 320px) {
+  .tabs .nav-pills {
+    display: none !important;
+  }
+}
+.tabs .nav-pills .nav-item:nth-child(-n+2) {
+  margin-right: rem(13px);
+}
+.tabs .nav-pills .nav-item .nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  color: #253858;
+  background: #fff;
+  border-radius: rem(6px) !important;
+  width: 100%;
+  min-width: 120px;
+  padding: 0 rem(12px);
+  height: rem(40px);
+}
+.tabs .nav-pills .nav-item .nav-link svg {
+  margin-right: rem(5px);
+  fill: #253858 !important;
+}
+.tabs .nav-pills .nav-item .nav-link svg path {
+  fill: #253858 !important;
+}
+.tabs .nav-pills .nav-item .nav-link.active {
+  background: #9637f1 !important;
+  color: #fff;
+}
+.tabs .nav-pills .nav-item .nav-link.active svg {
+  fill: #fff !important;
+}
+.tabs .nav-pills .nav-item .nav-link.active svg path {
+  fill: #fff !important;
+}
+
+/*# sourceMappingURL=tabs.css.map */

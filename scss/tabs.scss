@@ -1,0 +1,50 @@
+@import "../scss/variable";
+
+.tabs {
+	.nav-pills {
+		margin-bottom: rem(25px);
+        @media screen and (max-width:991px)and(min-width:320px){
+            display:none !important;
+        }
+
+		.nav-item {
+			&:nth-child(-n+2) {
+				margin-right: rem(13px);
+			}
+
+			.nav-link {
+				font-weight: bold;
+				font-size: 14px;
+				color: $dark-200;
+				background: $white;
+				border-radius: rem(6px) !important;
+				width: 100%;
+				min-width: 120px;
+				padding: 0 rem(12px);
+				height: rem(40px);
+
+				svg {
+					margin-right: rem(5px);
+					fill: $dark-200 !important;
+
+					path {
+						fill: $dark-200 !important;
+					}
+				}
+
+				&.active {
+					background: $primary !important;
+					color: $white;
+
+					svg {
+						fill: $white !important;
+
+						path {
+							fill: $white !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

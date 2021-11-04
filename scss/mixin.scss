@@ -1,0 +1,12 @@
+@use 'sass:math';
+
+@function stripUnit($value) {
+	@return math.div($value, $value * 0 + 1);
+}
+
+@function rem($pxValue) {	
+	$a: math.div(stripUnit($pxValue),16);
+	@return $a+rem;
+}
+
+
